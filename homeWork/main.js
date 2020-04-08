@@ -1,7 +1,7 @@
 const clickButton = document.querySelector('.classButton');
 
 let oddNumber = 1;
-function funcName() {
+clickButton.addEventListener('click', function() {
     let newLi = document.createElement('li'); 
     if(oddNumber%2==1){
         console.log(`your number ${oddNumber} is odd, congratulations!`);
@@ -17,8 +17,4 @@ function funcName() {
     let newLiStyle = document.getElementById('ulId')
     newLiStyle.appendChild(newLi);
 
-}
-
-
-
-clickButton.addEventListener('click', funcName);
+} );
